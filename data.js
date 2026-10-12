@@ -6,8 +6,8 @@ const PROFILE = {
   title:    { en: "Cloud & DevOps Engineer", ar: "مهندس Cloud و DevOps" },
   location: { en: "Monufia, Egypt", ar: "المنوفية، مصر" },
   greeting: { en: "Hello, I'm", ar: "أهلًا، أنا" },
-  phone: "",                       // TODO: add your phone number (e.g. "+20 1XX XXX XXXX")
-  whatsapp: "",                    // TODO: add WhatsApp number digits (e.g. "201XXXXXXXXX")
+  phone: "+20 101 960 4735",
+  whatsapp: "201019604735",
   whatsappMsg: { en: "Hi Ahmed, I saw your portfolio.", ar: "أهلًا أحمد، شفت البورتفوليو بتاعك." },
   email: "PLACEHOLDER",            // TODO: put your real email here
   linkedin: "#", github: "#",      // TODO: add your LinkedIn / GitHub URLs (hidden while "#")
@@ -92,6 +92,7 @@ const FOOTER = {
 const FOOTER_DIRECT = [
   { key: "github",   label: "GitHub",   url: "#" },   // TODO
   { key: "linkedin", label: "LinkedIn", url: "#" },   // TODO
+  { key: "whatsapp", label: "WhatsApp", url: "https://wa.me/201019604735" },
 ];
 
 const PLATFORMS = [
@@ -200,10 +201,10 @@ const SERVICES = [
 ];
 
 const PROJECTS = [
-  { cover: null,
+  { cover: "assets/projects/devops-cover.svg",
     title: { en: "Automated Cloud Infrastructure & Deployment", ar: "بنية سحابية ونشر مؤتمت" },
     category: { en: "DevOps · Ansible · Docker", ar: "DevOps · Ansible · Docker" },
-    badge: true,
+    badge: false,
     problem: { en: "Setting up servers and development environments manually is slow and inconsistent across stages.", ar: "تجهيز السيرفرات وبيئات التطوير يدويًا بطيء وغير ثابت بين المراحل." },
     role: { en: "I designed and implemented the automation.", ar: "صمّمت ونفّذت الأتمتة." },
     solution: { en: [
@@ -217,7 +218,7 @@ const PROJECTS = [
     tech: ["Ansible", "Docker", "YAML", "Jinja2", "Bash"],
     result: { en: "Reduced environment setup time by approximately 40% through infrastructure automation.", ar: "تقليل وقت تجهيز البيئة بنحو ٤٠٪ عن طريق أتمتة البنية التحتية." },
     links: { repo: "#", demo: null } },
-  { cover: null,
+  { cover: "assets/projects/devops-cover.svg",
     title: { en: "Database Schema & Application Architecture", ar: "تصميم قاعدة البيانات ومعمارية التطبيق" },
     category: { en: "Databases · SQL Server · Python", ar: "قواعد البيانات · SQL Server · Python" },
     badge: false,
@@ -241,10 +242,10 @@ const ACHIEVEMENTS = [];
 const CERTIFICATIONS = [
   { title: { en: "DevOps & Cloud Infrastructure Training", ar: "تدريب DevOps والبنية التحتية السحابية" },
     issuer: { en: "Infrastructure automation, Ansible, Docker, containerization, deployment workflows", ar: "أتمتة البنية التحتية وAnsible وDocker والحاويات وسير النشر" },
-    date: { en: "Hands-on training", ar: "تدريب عملي" }, meta: [], image: null, verifyUrl: null },
+    date: { en: "Hands-on training", ar: "تدريب عملي" }, meta: [], image: "assets/brand/logo.svg", verifyUrl: null },
   { title: { en: "Computer Networking Fundamentals", ar: "أساسيات شبكات الحاسب" },
     issuer: { en: "Cisco CCNA principles, network administration, bandwidth management", ar: "مبادئ Cisco CCNA وإدارة الشبكات وإدارة عرض النطاق" },
-    date: { en: "Training", ar: "تدريب" }, meta: [], image: null, verifyUrl: null },
+    date: { en: "Training", ar: "تدريب" }, meta: [], image: "assets/brand/logo.svg", verifyUrl: null },
 ];
 
 const NAV_SECTIONS = [
